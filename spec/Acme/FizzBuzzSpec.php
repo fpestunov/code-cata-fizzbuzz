@@ -38,4 +38,9 @@ class FizzBuzzSpec extends ObjectBehavior
         $this->execute(10)->shouldReturn('buzz');
     }
 
+    function it_translates_15_for_fizzbuzz()
+    {
+        $this->execute(15)->shouldReturn('fizzbuzz');
+    }
+
 }
