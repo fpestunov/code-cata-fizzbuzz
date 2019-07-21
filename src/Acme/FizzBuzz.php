@@ -12,4 +12,15 @@ class FizzBuzz
 
         return $number;
     }
+
+    public function executeUpTo($number)
+    {
+    	$output = [];
+
+    	foreach (range(1, $number) as $i) {
+    		$output[] = $this->execute($i);
+    	}
+
+    	return $output;
+    }
 }
