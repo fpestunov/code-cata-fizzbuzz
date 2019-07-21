@@ -8,8 +8,6 @@ class FizzBuzz
     {
     	if ($number === 3) return 'fizz';
 
-    	if ($number === 2) return 2;
-
-        return 1;
+        return $number;
     }
 }
